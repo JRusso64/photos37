@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane fx:controller="Controllers.LoginController" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #2c3e50;">
+   <children>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="50.0" spacing="20" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+         <Label fx:id="loginLabel" text="Please Login" style="-fx-text-fill: white;">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="usernameField" prefWidth="300.0" prefHeight="40.0" promptText="Enter Username" MaxWidth="300.0" onKeyPressed="#handleEnterPressed" style="-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </TextField>
+         <Button fx:id="loginButton" text="Login" mnemonicParsing="false" onAction="#onLoginBtnClicked" style="-fx-background-color: #e74c3c; -fx-text-fill: white;">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>
