@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="BorderPane" prefHeight="609.0" prefWidth="891.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GalleryController">
+   <top>
+      <ToolBar style="-fx-background-color: #2c3e50; -fx-padding: 5;">
+         <items>
+            <Button fx:id="CreateAlbumBtn" onAction="#onCreateAlbumBtnClicked" text="Create Album" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 12;"/>
+            <Button fx:id="DeleteAlbumBtn" onAction="#onDeleteAlbumBtnClicked" text="Delete Album" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 12;"/>
+            <Button fx:id="RenameAlbumBtn" onAction="#onRenameAlbumBtnClicked" text="Rename" style="-fx-background-color: #f1c40f; -fx-text-fill: white; -fx-font-size: 12;"/>
+            <Button fx:id="OpenAlbumbBtn" onAction="#onOpenAlbumBtnClicked" text="Open" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-size: 12;"/>
+            <Button fx:id="SearchBtn" onAction="#onSearchBtnClicked" text="Search" style="-fx-background-color: #9b59b6; -fx-text-fill: white; -fx-font-size: 12;"/>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <ListView fx:id="albumListView" style="-fx-control-inner-background: #ecf0f1; -fx-font-size: 14;"/>
+   </center>
+   <bottom>
+      <ToolBar style="-fx-background-color: #2c3e50; -fx-padding: 5;">
+         <items>
+            <Button fx:id="LogoutBtn" onAction="#onLogoutBtnClicked" text="Logout" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 12;"/>
+         </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>
