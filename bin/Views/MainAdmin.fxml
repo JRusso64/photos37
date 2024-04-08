@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane fx:id="mainAdminPane" fx:controller="Controllers.MainAdminController" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #34495e;">
+   <children>
+      <VBox alignment="CENTER" spacing="15" layoutX="201.0" layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="201.0" AnchorPane.topAnchor="50.0">
+         <Label fx:id="adminSystemLabel" text="Admin System" style="-fx-text-fill: white; -fx-font-size: 25;">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Label>
+
+         <Button fx:id="ListUserBtn" mnemonicParsing="false" onAction="#onListUsersClicked" text="List User" style="-fx-background-color: #16a085; -fx-text-fill: white;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+         <Button fx:id="AddUserBtn" mnemonicParsing="false" onAction="#onAddUserClicked" text="Add User" style="-fx-background-color: #27ae60; -fx-text-fill: white;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+         <Button fx:id="DeleteUserBtn" mnemonicParsing="false" onAction="#onDeleteUserClicked" text="Delete User" style="-fx-background-color: #c0392b; -fx-text-fill: white;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+         <Button fx:id="LogoutBtn" mnemonicParsing="false" onAction="#onLogOutClicked" text="Log Out" style="-fx-background-color: #2980b9; -fx-text-fill: white;">
+            <font>
+               <Font size="17.0" />
+            </font>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>

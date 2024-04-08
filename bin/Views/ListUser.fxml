@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane fx:id="ListUserPane" fx:controller="Controllers.ListUserController" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #34495e;">
+   <children>
+      <VBox alignment="CENTER" spacing="20" layoutX="150.0" layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+         <Label fx:id="listUsersLabel" text="List of Users" style="-fx-text-fill: white; -fx-font-size: 24;">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <ListView fx:id="userTable" prefHeight="200.0" prefWidth="300.0" style="-fx-control-inner-background: #ecf0f1;"/>
+         <Button fx:id="HomeBtn" mnemonicParsing="false" onAction="#onHomeBtnClicked" text="Home" style="-fx-background-color: #3498db; -fx-text-fill: white;">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>
